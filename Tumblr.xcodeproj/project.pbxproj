@@ -16,6 +16,12 @@
 		5A44998F1C7EA2E3002B31C8 /* TumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44998E1C7EA2E3002B31C8 /* TumblrUITests.swift */; };
 		5A44999D1C7EA3AB002B31C8 /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44999C1C7EA3AB002B31C8 /* TapBarViewController.swift */; };
 		5A44999F1C7EA6F5002B31C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44999E1C7EA6F5002B31C8 /* HomeViewController.swift */; };
+		5A4499A11C7EA9C3002B31C8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4499A01C7EA9C3002B31C8 /* SearchViewController.swift */; };
+		5A4499A31C7EAA15002B31C8 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4499A21C7EAA15002B31C8 /* ComposeViewController.swift */; };
+		5A4499A51C7EAEAF002B31C8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4499A41C7EAEAF002B31C8 /* AccountViewController.swift */; };
+		5A4499A71C7EAEE4002B31C8 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4499A61C7EAEE4002B31C8 /* TrendingViewController.swift */; };
+		5A4499AA1C7EBA8B002B31C8 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4499A81C7EBA8B002B31C8 /* BaseTransition.swift */; };
+		5A4499AB1C7EBA8B002B31C8 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4499A91C7EBA8B002B31C8 /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		5A4499901C7EA2E3002B31C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A44999C1C7EA3AB002B31C8 /* TapBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 		5A44999E1C7EA6F5002B31C8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5A4499A01C7EA9C3002B31C8 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5A4499A21C7EAA15002B31C8 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		5A4499A41C7EAEAF002B31C8 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5A4499A61C7EAEE4002B31C8 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		5A4499A81C7EBA8B002B31C8 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTransition.swift; path = "../../../../Downloads/Transition Files/BaseTransition.swift"; sourceTree = "<group>"; };
+		5A4499A91C7EBA8B002B31C8 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FadeTransition.swift; path = "../../../../Downloads/Transition Files/FadeTransition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +116,17 @@
 				5A44996E1C7EA2E3002B31C8 /* AppDelegate.swift */,
 				5A4499701C7EA2E3002B31C8 /* ViewController.swift */,
 				5A4499721C7EA2E3002B31C8 /* Main.storyboard */,
+				5A4499A81C7EBA8B002B31C8 /* BaseTransition.swift */,
+				5A4499A91C7EBA8B002B31C8 /* FadeTransition.swift */,
 				5A4499751C7EA2E3002B31C8 /* Assets.xcassets */,
 				5A4499771C7EA2E3002B31C8 /* LaunchScreen.storyboard */,
 				5A44997A1C7EA2E3002B31C8 /* Info.plist */,
 				5A44999C1C7EA3AB002B31C8 /* TapBarViewController.swift */,
 				5A44999E1C7EA6F5002B31C8 /* HomeViewController.swift */,
+				5A4499A01C7EA9C3002B31C8 /* SearchViewController.swift */,
+				5A4499A21C7EAA15002B31C8 /* ComposeViewController.swift */,
+				5A4499A41C7EAEAF002B31C8 /* AccountViewController.swift */,
+				5A4499A61C7EAEE4002B31C8 /* TrendingViewController.swift */,
 			);
 			path = Tumblr;
 			sourceTree = "<group>";
@@ -265,8 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4499A11C7EA9C3002B31C8 /* SearchViewController.swift in Sources */,
+				5A4499A71C7EAEE4002B31C8 /* TrendingViewController.swift in Sources */,
 				5A4499711C7EA2E3002B31C8 /* ViewController.swift in Sources */,
+				5A4499A51C7EAEAF002B31C8 /* AccountViewController.swift in Sources */,
+				5A4499AA1C7EBA8B002B31C8 /* BaseTransition.swift in Sources */,
 				5A44996F1C7EA2E3002B31C8 /* AppDelegate.swift in Sources */,
+				5A4499AB1C7EBA8B002B31C8 /* FadeTransition.swift in Sources */,
+				5A4499A31C7EAA15002B31C8 /* ComposeViewController.swift in Sources */,
 				5A44999D1C7EA3AB002B31C8 /* TapBarViewController.swift in Sources */,
 				5A44999F1C7EA6F5002B31C8 /* HomeViewController.swift in Sources */,
 			);
