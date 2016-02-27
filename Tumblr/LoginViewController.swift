@@ -11,13 +11,14 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginFormImageView: UIImageView!
+    @IBOutlet weak var loginFormView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-     
-    }
 
+        self.view.backgroundColor = UIColor.clearColor()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

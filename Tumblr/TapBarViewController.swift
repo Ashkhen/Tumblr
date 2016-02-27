@@ -9,9 +9,10 @@
 import UIKit
 
 class TapBarViewController: UIViewController {
-
+    
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var exploreImageView: UIImageView!
     
     var homeViewController: UIViewController!
     var searchViewController: UIViewController!
@@ -19,8 +20,11 @@ class TapBarViewController: UIViewController {
     var accountViewController: UIViewController!
     var trendingViewController: UIViewController!
     
+    var fadeTransition: FadeTransition!
+    
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
+    var previousIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,24 +36,54 @@ class TapBarViewController: UIViewController {
         accountViewController = storyboard.instantiateViewControllerWithIdentifier("AccountViewController")
         trendingViewController = storyboard.instantiateViewControllerWithIdentifier("TrendingViewController")
         composeViewController = storyboard.instantiateViewControllerWithIdentifier("ComposeViewController")
-       
+        
         viewControllers = [homeViewController, searchViewController, composeViewController, accountViewController, trendingViewController]
         
         buttons[selectedIndex].selected = true
         didPressButton(buttons[selectedIndex])
-
+        
+        // Optionally initialize the property to a desired starting value
+        self.exploreImageView.alpha = 0
+        //self.secondView.alpha = 1
+        UIView.animateWithDuration(0.4, animations: {
+            // This causes first view to fade in and second view to fade out
+            self.exploreImageView.alpha = 1
+            //self.secondView.alpha = 0
+        })
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Access the ViewController that you will be transitioning too, a.k.a, the destinationViewController.
+        let destinationViewController = segue.destinationViewController as UIViewController!
+        
+        // Set the modal presentation style of your destinationViewController to be custom.
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        
+        // Create a new instance of your fadeTransition.
+        fadeTransition = FadeTransition()
+        
+        // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+        destinationViewController.transitioningDelegate = fadeTransition
+        
+        // Adjust the transition duration. (seconds)
+        fadeTransition.duration = 0.3
+        fadeTransition.alpha = 1
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func didPressButton(sender: UIButton) {
         selectedIndex = sender.tag
-        let previousIndex = selectedIndex
+        if selectedIndex != previousIndex {
+            buttons[previousIndex].selected = false
+        }
         
-        buttons[previousIndex].selected = false
+        previousIndex = selectedIndex
+
         let previousVC = viewControllers[previousIndex]
         
         previousVC.willMoveToParentViewController(nil)
@@ -65,5 +99,5 @@ class TapBarViewController: UIViewController {
         contentView.addSubview(vc.view)
         vc.didMoveToParentViewController(self)
         
-        }
+    }
 }
