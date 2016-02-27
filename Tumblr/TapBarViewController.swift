@@ -42,14 +42,10 @@ class TapBarViewController: UIViewController {
         buttons[selectedIndex].selected = true
         didPressButton(buttons[selectedIndex])
         
-        // Optionally initialize the property to a desired starting value
-        self.exploreImageView.alpha = 0
-        //self.secondView.alpha = 1
-        UIView.animateWithDuration(0.4, animations: {
-            // This causes first view to fade in and second view to fade out
-            self.exploreImageView.alpha = 1
-            //self.secondView.alpha = 0
-        })
+        exploreImageView.hidden = false
+        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 3, options: [.Repeat, .Autoreverse], animations: {
+            self.exploreImageView.center.y += 10
+            }, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -80,6 +76,13 @@ class TapBarViewController: UIViewController {
         if selectedIndex != previousIndex {
             buttons[previousIndex].selected = false
         }
+        
+        if sender.tag == 1 {
+            exploreImageView.hidden = true
+        } else {
+            exploreImageView.hidden = false
+        }
+    
         
         previousIndex = selectedIndex
 
