@@ -21,7 +21,7 @@ class ComposeViewController: UIViewController {
     var selectedIndex: Int = 0
 
     let yOffsets: [Float] = [146, 146, 146, 265, 265, 265]
-    let delays: [Double] = [0.0, 0.2, 0.3, 0.4, 0.5, 0.6]
+    let delays: [Double] = [0.3, 0, 0.2, 0.4, 0.15, 0.6]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,18 +73,18 @@ class ComposeViewController: UIViewController {
             UIView.animateWithDuration(0.3, delay: NSTimeInterval(delays[i]), options: [], animations: {
                 () -> Void in
                 self.buttons[i].frame.origin.y = CGFloat(self.yOffsets[i])
-            },
-                    completion: nil)
+            }, completion: nil)
         }
     }
     
     @IBAction func onNevermindTap(sender: AnyObject) {
         
         for i in 0 ..< (self.buttons.count) {
-            UIView.animateWithDuration(0.8, animations: {
+             UIView.animateWithDuration(0.3, delay: NSTimeInterval(delays[i]), options: [], animations: {
                 () -> Void in
                 self.buttons[i].frame.origin.y = -600
-            })
+             }, completion: nil)
+
         }
         delay(0.55) { () -> () in
             self.dismissViewControllerAnimated(true, completion: nil)

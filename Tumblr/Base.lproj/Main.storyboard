@@ -78,6 +78,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="contentView" destination="wiz-lc-okz" id="AcJ-t1-7ph"/>
                         <outlet property="exploreImageView" destination="rDd-N2-Pw0" id="vTx-8p-O4a"/>
@@ -289,6 +290,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="7FK-e8-DuY"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTL-QD-xOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
