@@ -68,7 +68,6 @@ class TapBarViewController: UIViewController {
         
         // Adjust the transition duration. (seconds)
         fadeTransition.duration = 0.3
-        fadeTransition.alpha = 1
     }
     
     override func didReceiveMemoryWarning() {

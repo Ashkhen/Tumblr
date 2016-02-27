@@ -2,20 +2,21 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/TumblrTests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TumblrTests/TumblrTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TumblrUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TumblrUITests/TumblrUITests.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/.gitignore" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TumblrTests/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TumblrTests/TumblrTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/AppDelegate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tumblr/TapBarViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tumblr/TrendingViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/HomeViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tumblr/ComposeViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tumblr/TrendingViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tumblr/ViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tumblr/LoginViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tumblr/TapBarViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/SearchViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tumblr/ViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tumblr/ComposeViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tumblr/LoginViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tumblr/AccountViewController.swift" isTestSource="false" />

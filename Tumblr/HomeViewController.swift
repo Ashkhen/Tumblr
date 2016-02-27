@@ -43,7 +43,6 @@ class HomeViewController: UIViewController {
         
         // Adjust the transition duration. (seconds)
         fadeTransition.duration = 0.3
-        fadeTransition.alpha = 1
     }
     
 }
