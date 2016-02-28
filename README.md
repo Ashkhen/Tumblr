@@ -17,7 +17,7 @@ Approximate Time Spent: **8 hours**
 - [x] Loading
 	-[x] **Optional:** Show the custom loading indicator by playing the sequence of pngs 
 
-![ScreenShot]()
+![ScreenShot](https://raw.githubusercontent.com/Ashkhen/Tumblr/master/Walkthrough.gif)
 
 ## License
 
