@@ -15,7 +15,7 @@ Approximate Time Spent: **8 hours**
 - [x] Bobbing Discover Bubble
 	- [x] **Optional:** Add an image view to the custom tab bar controller. When the appropriate button is selected, hide the bubble. Otherwise, show it 
 - [x] Loading
-	-[x] **Optional:** Show the custom loading indicator by playing the sequence of pngs 
+	- [x] **Optional:** Show the custom loading indicator by playing the sequence of pngs 
 
 ![ScreenShot](https://raw.githubusercontent.com/Ashkhen/Tumblr/master/Walkthrough.gif)
 
