@@ -12,11 +12,13 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginFormImageView: UIImageView!
     @IBOutlet weak var loginFormView: UIView!
+    @IBOutlet weak var emailField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.view.backgroundColor = UIColor.clearColor()
+        emailField.becomeFirstResponder()
     }
     
     override func didReceiveMemoryWarning() {

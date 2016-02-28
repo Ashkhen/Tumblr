@@ -315,22 +315,29 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.25882352939999997" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="login_form" id="T4D-gT-lhl">
-                                <rect key="frame" x="10" y="218" width="300" height="132"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="login_form" id="T4D-gT-lhl">
+                                <rect key="frame" x="10" y="156" width="300" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kth-yx-Sel">
-                                <rect key="frame" x="20" y="305" width="142" height="39"/>
+                                <rect key="frame" x="20" y="243" width="142" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="onCancelTap:" destination="11h-vU-8xY" eventType="touchUpInside" id="BsZ-NF-pPj"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" id="wtU-vg-zxi">
+                                <rect key="frame" x="24" y="156" width="277" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.25882352939999997" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="wtU-vg-zxi" id="uGS-K3-dhu"/>
                         <outlet property="loginFormImageView" destination="T4D-gT-lhl" id="1S5-07-OOm"/>
                         <outlet property="loginFormView" destination="Qlg-8f-78l" id="NLq-Hb-dzi"/>
                     </connections>
